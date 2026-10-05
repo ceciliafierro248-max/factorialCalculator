@@ -10,7 +10,7 @@ def factorial(num):
         return print('Uh oh, what you typed in was not an integer. Please try again.')
 
     if num < 0:
-        return print('Sorry, your chosen number is either a negative number, which can not be calculated by this calculator')
+        return print('Sorry, your chosen number is either a negative number, which can not be calculated by this calculator.')
     if num == 0 or num == 1:
         return 1
     if num > 1:
@@ -27,15 +27,17 @@ pass
 # Gives the user 5 opportunities to utilize the calculator
 
 a = 0
-input('Hi! Welcome to the factorial calculator, please press enter and follow the directions on screen.')
+input('\n\n\n\nWelcome to the factorial calculator! Press enter to naviagte and follow the directions on screen.')
+input('This tool was created by Cecilia F. as an extension of the Python Essentials Training LinkedIn Learning course.\n')
 input('Before we begin, lets start by explaining what a factorial is!')
-input('Factorials are a number * number -1 ... * 1. Lets look at how they are calculated!')
-input('Factorial of 3 is equal to 3 time 2 times 1, which equals 6\nPress enter to use the factorial calculator')
+input('\nFactorials are a number * number -1 ... * 1. Factorials tell us how many ways something can be arranged. Lets look at how they are calculated!')
+input('\nFactorial of 3 is equal to 3 time 2 times 1, which equals 6. This means a list of 3 items can be arranged in 6 different ways. Lets calculate some factorials!')
+input('\nAn important note, this calculator uses recursion, so please do not type in large numbers.')
 
 while a < 5:
     # Made this a string because need to catcatate later
     tries = str(5 - a)
-    userInput = input('Please note that this calculator uses recursion, so please do not type in large numbers (i.e. keep it under 20).\nType in the number you want to see the factorial of. You have ' + tries + ' numbers left ')
+    userInput = input('\nType in a number. You have ' + tries + ' numbers left ')
 
     try:
         # All values in the command line automatically import as a string, so this makes them an integer
@@ -49,3 +51,4 @@ while a < 5:
         # Also substracted tries so the program ends
         print('Uh oh! You tried to type in a string (aka letters) or a decimal value. Please type in an integer value.')
         a = a + 1
+
