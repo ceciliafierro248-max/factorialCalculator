@@ -27,10 +27,15 @@ pass
 # Gives the user 5 opportunities to utilize the calculator
 
 a = 0
+input('Hi! Welcome to the factorial calculator, please press enter and follow the directions on screen.')
+input('Before we begin, lets start by explaining what a factorial is!')
+input('Factorials are a number * number -1 ... * 1. Lets look at how they are calculated!')
+input('Factorial of 3 is equal to 3 time 2 times 1, which equals 6\nPress enter to use the factorial calculator')
+
 while a < 5:
     # Made this a string because need to catcatate later
     tries = str(5 - a)
-    userInput = input('Hello, this is a factorial calculator. Type in the number you want to see the factorial of. You have ' + tries + ' numbers left ')
+    userInput = input('Please note that this calculator uses recursion, so please do not type in large numbers (i.e. keep it under 20).\nType in the number you want to see the factorial of. You have ' + tries + ' numbers left ')
 
     try:
         # All values in the command line automatically import as a string, so this makes them an integer
