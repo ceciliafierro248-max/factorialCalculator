@@ -5,4 +5,4 @@ I created this project originally as a coding challenge for the Python Essential
 
 
 # Major Update
-I created a website for this project, and did some updates in the learning materials. For formating purposes, I created a new repo for this project and included the orginal command line code. Check out the project at https://github.com/ceciliafierro248-max/factorialCalculatorWebsite
+I created a website for this project and did some updates in the learning materials. For formatting purposes, I created a new repo for this project and included the original command line code. Check out the project at https://github.com/ceciliafierro248-max/factorialCalculatorWebsite
